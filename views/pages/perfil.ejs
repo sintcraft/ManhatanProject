@@ -1,0 +1,15 @@
+<html lang="en">
+<head>
+    <%- include('../parts/head.ejs')%>
+</head>
+<body>
+    <h1 id="saludo">Hola!</h1>
+    <footer>
+        <%- include('../parts/footer.ejs')%>
+    </footer>
+    <script type='text/javascript'> 
+        var rows = <%-JSON.stringify(datos)%>
+        let saludo = document.getElementById('saludo').innerHTML= "Hola! "+ datos.username
+    </script> 
+</body>
+</html>

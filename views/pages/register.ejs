@@ -1,0 +1,16 @@
+<html lang="en">
+<head>
+    <%- include('../parts/head.ejs')%>
+</head>
+<body>
+    <form action="/register" method="POST">
+        <input type="text" name="user" id="user" placeholder="username">
+        <input type="password" name="psw1" id="password" placeholder="password">
+        <input type="password" name="psw2" id="password2" placeholder="repeat the password">
+        <button type="submit">Login</button>
+    </form>
+    <footer>
+        <%- include('../parts/footer.ejs')%>
+    </footer>
+</body>
+</html>

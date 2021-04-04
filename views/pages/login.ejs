@@ -1,0 +1,15 @@
+<html lang="en">
+<head>
+    <%- include('../parts/head.ejs')%>
+</head>
+<body>
+    <form action="/login" method="POST">
+        <input type="text" name="user" id="user" placeholder="username">
+        <input type="password" name="psw" id="password" placeholder="password">
+        <button type="submit">Login</button>
+    </form>
+    <footer>
+        <%- include('../parts/footer.ejs')%>
+    </footer>
+</body>
+</html>
